@@ -79,8 +79,8 @@ function printSales(){
         <td class="text-white">${sales[i].saleDiameter}</td>
         <td class="text-white">${sales[i].saleBars}</td>
         <td class="text-white">${sales[i].saleBarLength}</td>
-        <td class="text-white">${result}</td>
         <td class="text-white">${sales[i].saleDesc}</td>
+        <td class="text-white">${result}</td>
 
         
         <td><button type="button" onclick="deleteSale(${i})" class="btn btn-danger">حذف</button></td>
