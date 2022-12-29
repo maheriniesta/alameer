@@ -12,9 +12,10 @@ body{
 main {
     background-image: url(../img/main-bg.jpg);
     background-size: cover;
-    height: 100%;
+    height:fit-content;
     position: relative;
     z-index: 99;
+    padding:  0  0 100px 0;
 }
 main:before{
     content: "";
@@ -26,8 +27,17 @@ main:before{
     background-color: rgba(0, 0, 0, 0.9);
     z-index: -1;
 }
+
 @media (min-width:992px){
-    .row .col-md-6{
+    .row .col-lg-6{
     margin-right: 2rem;
+    }
+}
+@media (max-width:576px){
+    th,tr,button{
+        font-size: 13.5px;
+    }
+    .row .col-lg-6{
+        margin-top: 2rem;
     }
 }
