@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Course</title>
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- style  -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <main>
+      <h2 class="text-center text-uppercase text-bg-dark py-2">
+        شركة الأمير لمواد البناء
+      </h2>
+      <div class="container">
+        <div class="row h-100">
+          <div class="col-md-5 mb-3">
+            <form action="">
+              <div class="mb-3 position-relative">
+                <label for="cat" class="form-label text-white">قطر الحديد</label>
+                <select
+                  class="form-select"
+                  id="diameter"
+                  aria-label="Default select example">
+                  <option selected hidden value="">
+                    قطر الحديد بالملليمتر
+                  </option>
+                  <option value="8">8</option>
+                  <option value="10">10</option>
+                  <option value="12">12</option>
+                  <option value="14">14</option>
+                  <option value="16">16</option>
+                  <option value="18">18</option>
+                  <option value="20">20</option>
+                  <option value="22">22</option>
+                  <option value="25">25</option>
+                </select>
+              </div>
+              <div class="mb-3 position-relative">
+                <label for="" class="form-label text-white"
+                  >عدد قضبان الحديد</label
+                >
+                <input
+                  type="number"
+                  class="form-control"
+                  id="bars"
+                  placeholder=""
+                />
+              </div>
+              <div class="mb-3 position-relative">
+                <label for="" class="form-label text-white"
+                  >طول قضيب الحديد</label
+                >
+                <input
+                  type="number"
+                  class="form-control"
+                  id="bar-length"
+                  placeholder="طول قضيب الحديد بالمتر"
+                />
+              </div>
+              <div class="mb-3 position-relative">
+                <label for="exampleFormControlTextarea1" class="form-label text-white"
+                  >ملاحظات</label
+                >
+                <textarea
+                  class="form-control"
+                  id="desc"
+                  placeholder=""
+                  rows="3"
+                ></textarea>
+              </div>
+
+              <div class="btns">
+                <button type="submit" id="add-btn" class="btn btn-primary">
+                  إضافة
+                </button>
+                <!-- <button type="submit" id="update-btn" class="btn btn-primary">update</button> -->
+                <button type="button" id="clear-btn" class="btn btn-dark">
+                  مسح البيانات
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="d-flex justify-content-between">
+              <h3
+                class="text-white text-decoration-underline text-primary"
+              >
+                المشتريات
+              </h3>
+              <button id="delete-all" class="btn btn-danger btn-sm">
+                مسح الكل<i class="fa-solid fa-trash"></i>
+              </button>
+            </div>
+            <table class="table table-striped mt-3 text-white">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">قطر الحديد</th>
+                  <th scope="col">عدد قضبان الحديد</th>
+                  <th scope="col">طول قضيب الحديد</th>
+                  <th scope="col">ملاحظات</th>
+                  <th scope="col">الوزن</th>
+
+                </tr>
+              </thead>
+              <tbody id="table"></tbody>
+            </table>
+            <h5 id="total" class="text-white"></h5>
+
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- sweetalert -->
+    <script src="assets/external/sweetalert2@11.js"></script>
+    <!-- main  -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
