@@ -60,7 +60,7 @@ function calcWeight(x){
     else if(x == 14) weight = 1.15;
     else if(x == 16) weight = 1.6;
     else if(x == 18) weight = 2;
-    else if(x == 20) weight = 2.47;
+    else if(x == 20) weight = 2.5;
     else if(x == 22) weight = 2.98;
     else if(x == 25) weight = 3.85;
     else weight = 0;
